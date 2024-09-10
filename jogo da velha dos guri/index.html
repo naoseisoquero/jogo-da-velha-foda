@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="side-image left-image">
+            <div class="scoreboard">
+                <div class="score">
+                    Vitórias: <span id="left-wins">0</span>
+                </div>
+            </div>
+            <img src="bnnerd.png" alt="Imagem à esquerda">
+        </div>
+        <div class="game-board-container">
+            <div id="game-board">
+                <div class="corpo" data-cell></div>
+                <div class="corpo" data-cell></div>
+                <div class="corpo" data-cell></div>
+                <div class="corpo" data-cell></div>
+                <div class="corpo" data-cell></div>
+                <div class="corpo" data-cell></div>
+                <div class="corpo" data-cell></div>
+                <div class="corpo" data-cell></div>
+                <div class="corpo" data-cell></div>
+            </div>
+            <div id="status">Jogador do time BN começa!</div>
+            <button id="reset">Reiniciar</button>
+        </div>
+        <div class="side-image right-image">
+            <div class="scoreboard">
+                <div class="score">
+                    Vitórias: <span id="right-wins">0</span>
+                </div>
+            </div>
+            <img src="vitornerd.png" alt="Imagem direita">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
